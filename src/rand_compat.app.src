@@ -1,0 +1,10 @@
+{application, rand_compat,
+ [ {description, "Erlang random number compatibility library"}
+ , {vsn, "1.0"}
+ , {modules, []}
+ , {registered, []}
+ , {applications, [ kernel
+                  , stdlib
+                  ]}
+ , {env, []}
+ ]}.

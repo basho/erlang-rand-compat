@@ -1,0 +1,7 @@
+/ebin
+/.eunit/
+/.rebar/
+/_build/
+/rebar.lock
+/*.html
+/doc
