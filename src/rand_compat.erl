@@ -35,7 +35,7 @@
 %% Generate, compile and load rnd module.
 %% @end
 %%--------------------------------------------------------------------
--spec init() -> {ok, module()}.
+-spec init() -> {'ok', module()}.
 init() ->
     init(?DEFAULT_MODNAME).
 
@@ -44,7 +44,7 @@ init() ->
 %% Generate, compile and load ModName module.
 %% @end
 %%--------------------------------------------------------------------
--spec init(string()) -> {ok, module()}.
+-spec init(string()) -> {'ok', module()}.
 init(ModName) ->
     %% First, select the right module, then generate the appropriate code as a
     %% string, and finally compile and load it as ModName.
@@ -68,7 +68,7 @@ select(ModName) ->
     end.
 
 %% Return module's implementation as a string.
--spec src(string(), string()) -> string().
+-spec src(string(), fun(() -> binary())) -> string().
 src(ModName, GenFuns) ->
     lists:flatten(
       io_lib:format(
