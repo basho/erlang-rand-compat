@@ -44,7 +44,7 @@ abbreviated command support.
 
 ## Using
 
-First we need to generate and load the module.
+First we need to generate and load the module:
 
     {ok, rnd} = rand_compat:init().
 
