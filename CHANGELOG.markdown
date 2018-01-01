@@ -1,7 +1,11 @@
 # Change Log
 Noteworthy changes to this project will be documented in this file.
 
-## 1.2 2017-01-11
+## 1.2.1 - 2018-01-01
+### Changed
+- Update copyright years.
+
+## 1.2 - 2017-01-11
 ### Changed
 - Update copyright years.
 - Fix typo in README.
