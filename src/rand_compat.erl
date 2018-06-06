@@ -102,7 +102,8 @@ uniform_s(N, St) -> random:uniform_s(N, St).
 funs_rand() ->
     <<"
 seed()           -> rand:seed(exsplus).
-seed(Exp)        -> rand:seed(exsplus, Exp).
+seed({_,_,_}=S)  -> rand:seed(exsplus, S);
+seed(Exp)        -> rand:seed(Exp).
 uniform()        -> rand:uniform().
 uniform(N)       -> rand:uniform(N).
 uniform_s(St)    -> rand:uniform_s(St).
